@@ -31,6 +31,8 @@ Imagine that we typed the sentence, “I am happy to neet you”. When pushing o
 
 ### <a name="h4"></a>**Demonstration/Example**
 
+Look at the example below to see stacks in action
+
 [Stacks Example](DS-FinalProject1_example.docx)
 
 ### <a name="h5"></a>**Solve**
