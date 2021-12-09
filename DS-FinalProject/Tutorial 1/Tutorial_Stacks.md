@@ -83,3 +83,5 @@ Once you have completed solving the problem above, take a look at the solution a
 * **push** - The operation to add a new item onto the stack. The item is placed at the back of the stack.
 
 * **stack** - A data structure that follows a Last In, First Out (LIFO) rule. The stack is used to reverse data or remember previous data including previous results.
+
+Click [here](https://github.com/wjacobb/DS-FinalProject/blob/main/DS-FinalProject/Welcome.md) to return to the Welcome page.
