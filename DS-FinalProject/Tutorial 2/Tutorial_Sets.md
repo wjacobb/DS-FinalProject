@@ -20,7 +20,7 @@ However the order might change due to the function of sets. Like so:
 ![Set Order Example](Set_Order_Example.PNG "Order example")
 
 ### <a name="h2"></a>**Purpose of sets**
-Now why would we want to have sets? The data gets jumbled around and if it's jumbled around what good does it serve? Well because it doesn't allow duplicates we can search for a unique input. For example, when creating a username for an email account or other online service have you ever come accross the error along the lines of "Username is already taken"? Sets can be used to notify the user if the input is already in a large set of data. This technique is called **hashing** which enables the programmer to add, remove, and test to see if data is already in a set in O(1) time.
+Now why would we want to have sets? The data gets jumbled around and if it's jumbled around what good does it serve? Well because it doesn't allow duplicates we can search for a unique input. For example, when creating a username for an email account or other online service have you ever come across the error along the lines of "Username is already taken"? Sets can be used to notify the user if the input is already in a large set of data. This technique is called **hashing** which enables the programmer to add, remove, and test to see if data is already in a set in O(1) time.
 
 ### <a name="h4"></a>**Applications/Example**
 In many instances we can achieve an O(1) time. If we wanted to add a set including "a, b, c" we can use the `add()` function like so:
@@ -51,7 +51,7 @@ Please compare your answer once you have finished attempting the problem above. 
 |member(value)       |Determines if "value" is in the set|if value in my_set:|O(1) - Performance of hashing the value (assuming good conflict resolution)|
 |size()              |Returns the number of items in the set|length = len(my_set)|O(1) - Performance of returning the size of the set|
 
-* **hashing** - The process of mapping an item to an index location using a hashing function. Since the function does not require searching throught the data structure, hashing can result in an O(1) in the best case.
+* **hashing** - The process of mapping an item to an index location using a hashing function. Since the function does not require searching through the data structure, hashing can result in an O(1) in the best case.
 
 * **hashing function** - A function that converts the value of an item to a numerical index value. The hashing function will include a modulo operation to ensure the resulting index is within range of the sparsed list.
 
