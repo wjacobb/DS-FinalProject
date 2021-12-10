@@ -25,6 +25,6 @@ alphabet.remove('y') # {'b', 'c', 'z', 'x', 's', 'e', 'j', 'k', 'i', 'l'}
 alphabet.remove('e') # {'b', 'c', 'z', 'x', 's', 'j', 'k', 'i', 'l'}
 alphabet.remove('j') # {'b', 'c', 'z', 'x', 's', 'k', 'i', 'l'}
 
-print(alphabet)
+print(alphabet) # {'b', 'c', 'z', 'x', 's', 'k', 'i', 'l'}
 
 # The answer should be some variation of {'b', 'c', 'z', 'x', 's', 'k', 'i', 'l'}
