@@ -1,6 +1,6 @@
 # Reading: Stacks
 
-### Table of Contents
+## Table of Contents
 
 ### Stacks
 * [Introduction/Analogy](#h1)
