@@ -51,13 +51,9 @@ Please compare your answer once you have finished attempting the problem above. 
 |member(value)       |Determines if "value" is in the set|if value in my_set:|O(1) - Performance of hashing the value (assuming good conflict resolution)|
 |size()              |Returns the number of items in the set|length = len(my_set)|O(1) - Performance of returning the size of the set|
 
-* **chaining** - A method of removing conflicts in a set in which all items that hash to the same index are chained together into a single data structure stored in that target index. When looking for data, the code will need to traverse the data structure.
-
 * **hashing** - The process of mapping an item to an index location using a hashing function. Since the function does not require searching throught the data structure, hashing can result in an O(1) in the best case.
 
 * **hashing function** - A function that converts the value of an item to a numerical index value. The hashing function will include a modulo operation to ensure the resulting index is within range of the sparsed list.
-
-* **open addressing** - A method of removing conflicts in a set in which a new empty location is found elsewhere in the sparse list. There are multiple ways of finding an empty location including moving over 1 index at a time until one is found. When looking for data, the code will need to follow this search strategy until something is found.
 
 * **set** - A data structure that maps data to an index based on a hashing function. Sets can only hold unique data because of the hashing function. Sets are useful for summarizing data and finding duplicates.
 
