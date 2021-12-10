@@ -3,28 +3,43 @@ Here's the answer sheet for the Sets reading problem
 """
 
 alphabet = set()
+alphabet2 = set()
 
-# Here we're going to keep track as if it were in order. Your order may be different.
-alphabet.add('a') # {'a'}
-alphabet.add('b') # {'a', 'b'}
-alphabet.add('c') # {'a', 'b', 'c'}
-alphabet.add('z') # {'a', 'b', 'c', 'z'}
-alphabet.add('x') # {'a', 'b', 'c', 'z', 'x'}
-alphabet.add('a') # {'a', 'b', 'c', 'z', 'x'}
-alphabet.add('y') # {'a', 'b', 'c', 'z', 'x', 'y'}
-alphabet.add('s') # {'a', 'b', 'c', 'z', 'x', 'y', 's'}
-alphabet.add('e') # {'a', 'b', 'c', 'z', 'x', 'y', 's', 'e'}
-alphabet.add('j') # {'a', 'b', 'c', 'z', 'x', 'y', 's', 'e', 'j'}
-alphabet.add('k') # {'a', 'b', 'c', 'z', 'x', 'y', 's', 'e', 'j', 'k'}
-alphabet.add('i') # {'a', 'b', 'c', 'z', 'x', 'y', 's', 'e', 'j', 'k', 'i'}
-alphabet.add('l') # {'a', 'b', 'c', 'z', 'x', 'y', 's', 'e', 'j', 'k', 'i', 'l'}
-alphabet.add('e') # {'a', 'b', 'c', 'z', 'x', 'y', 's', 'e', 'j', 'k', 'i', 'l'}
+alphabet.add('a')
+alphabet.add('b')
+alphabet.add('c')
+alphabet.add('z')
+alphabet.add('x')
+alphabet.add('a')
+alphabet.add('y')
+alphabet.add('s')
+alphabet.add('e')
+alphabet.add('j')
+alphabet.add('k')
+alphabet.add('i')
+alphabet.add('l')
+alphabet.add('e')
 
-alphabet.remove('a') # {'b', 'c', 'z', 'x', 'y', 's', 'e', 'j', 'k', 'i', 'l'}
-alphabet.remove('y') # {'b', 'c', 'z', 'x', 's', 'e', 'j', 'k', 'i', 'l'}
-alphabet.remove('e') # {'b', 'c', 'z', 'x', 's', 'j', 'k', 'i', 'l'}
-alphabet.remove('j') # {'b', 'c', 'z', 'x', 's', 'k', 'i', 'l'}
+alphabet2.add('a')
+alphabet2.add('b')
+alphabet2.add('c')
+alphabet2.add('d')
+alphabet2.add('e')
+alphabet2.add('f')
+alphabet2.add('g')
+alphabet2.add('h')
+alphabet2.add('i')
+alphabet2.add('j')
 
-print(alphabet) # {'b', 'c', 'z', 'x', 's', 'k', 'i', 'l'}
+alphabet.remove('a')
+alphabet.remove('y')
+alphabet.remove('e')
+alphabet.remove('j')
 
-# The answer should be some variation of {'b', 'c', 'z', 'x', 's', 'k', 'i', 'l'}
+alphabet3 = alphabet & alphabet2
+alphabet4 = alphabet | alphabet2
+
+print(alphabet3) # {b, c, i}
+print(alphabet4) # {a, l, b, j, c, z, e, f, h, x, s, i, d, k, g}
+
+# The answer may not be in the same order, but should match in general
