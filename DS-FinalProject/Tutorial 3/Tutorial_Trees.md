@@ -14,7 +14,7 @@
 
 ### <a name="h1"></a>**Introduction/Define**
 
-**Trees** in data structures are much like linked lists in teh way that the nodes are connected together through pointers. The key difference is that a tree can connect to multiple different nodes. A few things that we'll be talking about is the purpose of trees, inserting to trees, balancing trees, and navigating them.
+**Trees** in data structures are much like linked lists in the way that the nodes are connected together through pointers. The key difference is that a tree can connect to multiple different nodes. A few things that we'll be talking about is the purpose of trees, inserting to trees, balancing trees, and navigating them.
 
 ### <a name="h2"></a>**Purpose of Trees**
 The purpose of trees is to navigate through data at a quick and efficient rate. While inserting or removing it can be done in O(log n) time. While traversing and looking through the data it can be done in O(n) time while finding the data or size can be done in O(1) time. We can also take advantage of using linked lists and remove and stitch together links of data so the overall integrity of the tree can stay intact.
@@ -25,11 +25,11 @@ A **binary tree** is a tree that can be linked to up to two nodes. Our top node 
 ![Binary Tree](binary_tree.jpeg "Binary Tree from BYU-Idaho")
 
 ### <a name="h4"></a>**Navigating Trees**
-A **binary Search tree** (BST) is binary tree that makes inserting data, removing data, and traversing data simple and easy to navigate. The way that it works is that when you insert data, say the number "14" for instance, it will start from the root and if it is less than the value of the root it will pass it to the left subtree, if it is greater it will pass it to the right subtree, and if it is equal it will delete itself. Then the process of comparisons repeats in the respective subtree and the data "14" gets pushed down until it is either eliminated because the value already exists or it becomes a new leaf node.
+A **binary Search tree** (BST) is binary tree that makes inserting data, removing data, and traversing data simple and easy to navigate. The way that it works is that when you insert data, say the number "14" for instance, it will start from the root and if it is less than the value of the root it will pass it to the left subtree, if it is greater, it will pass it to the right subtree, and if it is equal it will delete itself. Then the process of comparisons repeats in the respective subtree and the data "14" gets pushed down until it is either eliminated because the value already exists, or it becomes a new leaf node.
 
 ![Binary Search Tree](Inkedbinary_search_tree_LI.jpg "Edited from Binary Search Tree, property of BYU-Idaho")
 
-So following the tree above we can see how we start first by comparing 14 to the root, 15. Here's the process:
+So, following the tree above we can see how we start first by comparing 14 to the root, 15. Here's the process:
 * Start at the root, 15 and compare.
 * Since 14 is less than 15 it goes to the left subtree.
 * Comparing 10 and 14 we see that 14 is greater than 10 so it is pushed to the right.
@@ -39,8 +39,8 @@ So following the tree above we can see how we start first by comparing 14 to the
 Now that we've learned how to concept of inserting into a BST what happens if all the data is greater than the first node? If it's not balanced evenly then is it much different from a linked list? Here's a picture to help visualize.
 ![Unbalanced BST](unbalanced_bst.jpeg "Unbalanced Tree visual from BYU-Idaho")
 
-Now that doens't look like a tree, it looks more like staircase. This won't benefit our search and insert time because it will then become O(n) time. Thus we need a method to *balance* the tree.
-A **balanced binary search tree** (balanced BST) is a BST in which neither subtree of the left or right of the root has a height that is greatly different from the other. Brigham Young University-Idaho defines the word **balanced** as when, "the height of the tree from the root to each leaf is consistent for all subtrees. The measure of consistentcy will vary between algorithms but usually does not exceed a height difference of 1." 
+Now that doesn't look like a tree, it looks more like staircase. This won't benefit our search and insert time because it will then become O(n) time. Thus, we need a method to *balance* the tree.
+A **balanced binary search tree** (balanced BST) is a BST in which neither subtree of the left or right of the root has a height that is greatly different from the other. Brigham Young University-Idaho defines the word **balanced** as when, "the height of the tree from the root to each leaf is consistent for all subtrees. The measure of consistency will vary between algorithms but usually does not exceed a height difference of 1." 
 Take a look at the image below.
 ![Original Balanced BST](avl_tree_initial.jpeg "Balanced Tree from BYU-Idaho")
 
@@ -48,7 +48,7 @@ This tree is balanced because the height of one side does not exceed greater tha
 
 ![Unbalanced Tree](avl_tree_unbalanced.jpeg "Unbalanced Tree from BYU-Idaho")
 
-Now we have an issue, because the difference in height between the two sides of the root differ by 2. In order to fix this we need to resituate the numbers 12, 13, and 14. When we do so we get the resulting tree.
+Now we have an issue, because the difference in height between the two sides of the root differ by 2. In order to fix this, we need to resituate the numbers 12, 13, and 14. When we do so we get the resulting tree.
 
 ![Rebalanced Tree](avl_tree_rebalanced.jpeg "Rebalanced Tree from BYU-Idaho")
 
@@ -56,7 +56,7 @@ Now we have an issue, because the difference in height between the two sides of 
 Now that we've talked about performing functions within the BST on a conceptual level, let's dig in with a little bit of code.
 
 ## Inserting
-First we need to know what we're doing while inserting into a BST. First, it is a recursive process in which a function or purpose is performed until it reaches a conclusion and breaks the cycle. We check to see if the data matches the root and depending on whether it is smaller, larger, or the same as the root it needs to be pointed another direction if applicable. Then the process is repeated for each new node it is directed to until there are no more nodes and it becomes a new leaf.
+First we need to know what we're doing while inserting into a BST. First, it is a recursive process in which a function or purpose is performed until it reaches a conclusion and breaks the cycle. We check to see if the data matches the root and depending on whether it is smaller, larger, or the same as the root it needs to be pointed another direction if applicable. Then the process is repeated for each new node it is directed to until there are no more nodes, and it becomes a new leaf.
 
 * Insert to the left or right
 * If it is pointed to a space, insert the data there.
@@ -109,7 +109,7 @@ def _insert(self, data, node):
 ```
 
 ### <a name="h7"></a>**Problem to Solve**
-For the problem to Solve for this tutorial we are going to proctice traversing backwards. Now to **traverse** a BST is when we display all the data in the tree in order or smallest to largest. You will be given the function to traverse forward, however you must code the method to go backwards.
+For the problem to Solve for this tutorial we are going to practice traversing backwards. Now to **traverse** a BST is when we display all the data in the tree in order or smallest to largest. You will be given the function to traverse forward, however you must code the method to go backwards.
 
 Click [Tutorial_Solve.py](Tutorial_Solve.py) to get started
 
